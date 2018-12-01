@@ -1,65 +1,58 @@
 body {
+  background-color: #fff;
   background: url("/images/road2-1.jpg");
-  background-color: #2e2e2e;
-  background-attachment: fixed;
+  /* Full height */
+  height: 400px;
+
+  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.background {
+
+}
+/*
 .countDownContainer {
   text-align: center;
   padding: 10px;
   display: table;
   margin: 0 auto;
-  padding: 10px;
-  border-spacing: 30px;
+  border: 10px solid #000000;
+  padding: 40px;
+  border-radius: 50%;
 }
 
 .info td {
   color: white;
-  font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
-  background: #2e2e2e;
-  background-size: auto;
-  font-size: 2.5vw;
-  border-radius: 5%;
-  border: 3px solid #000000;
-  padding: 20px;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;
+
 }
 
 .info1 td {
   color: white;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 30px;
   font-weight: bold;
 }
-
+*/
 .companyName {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 10px;
+  font-family: 'Satisfy', cursive;
   font-size: 4vw;
   color: white;
-  margin-top: 1%;
   font-weight: bold;
   text-align: center;
 }
 
 .comingSoon {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Satisfy', cursive;
+  padding-top: 50px;
   font-size: 2.5vw;
   color: white;
   font-weight: bold;
   text-align: center;
-}
-
-.name {
-  padding-left: 10%;
-}
-
-.name li {
-  display: flex;
-  padding: 30px;
-  color: white;
-  font-size: 6em;
-  font-weight: bold;
-  font-family: Arial;
 }
