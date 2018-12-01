@@ -1,5 +1,8 @@
 .footerClass {
-  position: absolute;
-  left: 80px;
+  position: fixed;
+  float: left;
+  font-family: 'Courgette', cursive;
+  padding-left: 20px;
+  padding-bottom: 10px;
   bottom: 0;
 }

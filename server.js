@@ -35,7 +35,25 @@ hbs.registerHelper('getCurrentYear', () => {
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-    pageTitle: 'Home Page'
+    pageTitle: 'Home'
+  });
+});
+
+app.get('/about', (req, res) => {
+  res.render('about.hbs', {
+    pageTitle: 'About'
+  });
+});
+
+app.get('/services', (req, res) => {
+  res.render('services.hbs', {
+    pageTitle: 'Services'
+  });
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs', {
+    pageTitle: 'Contact'
   });
 });
 
