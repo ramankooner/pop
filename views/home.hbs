@@ -10,72 +10,97 @@
 
   <body>
     {{> header}}
+    <div class ="content-wrapper">
+      <img src = "../images/trafficPicture7.png">
+        <div class = "text-wrapper">
+          <div class="text-wrapper1">
+            <p class = "comingSoon">
+              Los Angeles, California
+            </p>
+          </div>
+          <div class = "text-wrapper2">
+            <p class = "comingSoon">
+              May 2019
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="outerTimer">
+        <table class = "countDownContainer">
+          <tr class = "info">
+            <td id= "days"></td>
+            <td id= "hours"></td>
+            <td id= "minutes"></td>
+            <td id= "seconds"></td>
+          </tr>
+          <tr class = "info1">
+            <td>Days</td>
+            <td>Hours</td>
+            <td>Minutes</td>
+            <td>Seconds</td>
+          </tr>
+      </div>
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 1, 2019").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (seconds < 10) {
+              seconds = '0' + seconds;
+            }
+            if(hours < 10) {
+              hours = '0' + hours;
+            }
+
+            if(minutes < 10) {
+              minutes = '0' + minutes;
+            }
+            if (days < 10) {
+              days = '0' + days;
+            }
+
+            // Output the result in an element with id="demo"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+      </script>
+      <!-- img src = "../images/popAdLogo5.png" alt="POP AD icon"> -->
 
 
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("May 1, 2019").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-
-          // Get todays date and time
-          var now = new Date().getTime();
-
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          if (seconds < 10) {
-            seconds = '0' + seconds;
-          }
-          if(hours < 10) {
-            hours = '0' + hours;
-          }
-
-          if(minutes < 10) {
-            minutes = '0' + minutes;
-          }
-          if (days < 10) {
-            days = '0' + days;
-          }
-
-          // Output the result in an element with id="demo"
-          document.getElementById("days").innerHTML = days;
-          document.getElementById("hours").innerHTML = hours;
-          document.getElementById("minutes").innerHTML = minutes;
-          document.getElementById("seconds").innerHTML = seconds;
-
-          // If the count down is over, write some text
-          if (distance < 0) {
-              clearInterval(x);
-              document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-      }, 1000);
-    </script>
-    <!-- img src = "../images/popAdLogo5.png" alt="POP AD icon"> -->
-    <p class = "comingSoon">
-      Los Angeles, California
-    </p>
-    <p class = "comingSoon">
-      Coming Soon
-    </p>
-
-    <div id="outerTimer">
-      <table class = "countDownContainer">
-        <tr class = "info">
-          <td id= "days"></td>
-        </tr>
-        <tr class = "info1">
-          <td>Days</td>
-        </tr>
-    </div>
-
+      <!--<div id="outerTimer">
+        <table class = "countDownContainer">
+          <tr class = "info">
+            <td id= "days"></td>
+          </tr>
+          <tr class = "info1">
+            <td>Days</td>
+          </tr>
+      </div> -->
   </body>
-  {{> footer}}
+<!--  {{> footer}}-->
 </html>

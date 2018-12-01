@@ -1,58 +1,66 @@
 body {
   background-color: #fff;
-  background: url("/images/road2-1.jpg");
-  /* Full height */
-  height: 400px;
-
-  /* Center and scale the image nicely */
+  /*background: url("/images/trafficPicture1.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: scroll;*/
 }
 
-.background {
-
+.content-wrapper {
+  width: 100%;
 }
-/*
+
+.content-wrapper img {
+  width: 100%;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+}
+
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: -30%;
+}
+
+.text-wrapper1 p {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 3.5vw;
+}
+
+.text-wrapper2 p {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  padding-top: 30px;
+  font-size: 2.5vw;
+}
+
 .countDownContainer {
   text-align: center;
-  padding: 10px;
   display: table;
   margin: 0 auto;
-  border: 10px solid #000000;
-  padding: 40px;
-  border-radius: 50%;
+  margin-top: 17%;
+  border-spacing: 30px;
 }
 
 .info td {
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 30px;
-  font-family: 'Varela Round', sans-serif;
-
+  font-size: 25px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  border: 10px solid #000000;
+  padding: 30px;
+  border-radius: 50%;
 }
 
 .info1 td {
-  color: white;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 30px;
+  color: black;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
   font-weight: bold;
-}
-*/
-.companyName {
-  padding: 10px;
-  font-family: 'Satisfy', cursive;
-  font-size: 4vw;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
-.comingSoon {
-  font-family: 'Satisfy', cursive;
-  padding-top: 50px;
-  font-size: 2.5vw;
-  color: white;
-  font-weight: bold;
-  text-align: center;
 }
