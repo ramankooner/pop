@@ -1,16 +1,22 @@
 <?php
 
   if (isset($_POST['submit'])) {
-    $firstName = $_POST['firstname'];
-    $lastName = $_POST['lastname'];
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $mailTo = "ramankooner9@gmail.com";
+    $to = "ramankooner9@gmail.com";
+    $subject = 'Contact Form Submission';
     $headers = "From: ".$email;
-    $text = "Email receieved from ".$firstName." ".$lastName.".\n\n".$message;
+    $message = "Email receieved from ".$firstname." ".$lastname.".\n\n".$message;
 
-    mail($mailTo, $subject, $text, $headers);
-    header("Location: contactFormHandler.php?mailsend");
+    if(mail($to, $subject, $message, $headers)) {
+      $success = "Message sent, thank you for contacting us!";
+      $firstname = $lastname = $email = $message = '';
+    } else {
+      echo "Something went wrong!";
+    }
+    //header("Location: contactFormHandler.php?mailsend");
   }
  ?>
