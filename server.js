@@ -3,7 +3,7 @@ const hbs = require('hbs');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-var config = require('./config/config.json');
+//var config = require('./config/config.json');
 
 const port = process.env.PORT || 3000;
 var app = express();
@@ -91,8 +91,8 @@ app.post('/send', (req, res) => {
       // secure: false,
       service: 'gmail',
       auth: {
-        user: config.COMPANY_EMAIL,
-        pass: config.COMPANY_PASSWORD
+        user: 'testtesttest67123@gmail.com',
+        pass: 'testaccount123!'
       }
       // tls: {
       //    rejectUnauthorized: false
@@ -101,7 +101,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: config.COMPANY_EMAIL,
+      to: 'testtesttest67123@gmail.com',
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output
