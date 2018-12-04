@@ -10,8 +10,27 @@
   <body>
     {{> header}}
 
-    <p> Page Under Construction </p>
+    <div class = "container">
+      <div style="text-align:center">
+        <h2> --- Contact Us --- </h2>
+      </div>
 
-    {{> footer}}
+      <div class = "contactForm">
+        <form id="contact" action="contactFormHandler.php" method="post">
+          <label for="firstName"> First Name </label>
+          <input type="text" id="firstName" name="firstname" placeholder="First Name...">
+
+          <label for="lastName"> Last Name </label>
+          <input type="text" id="lastName" name="lastname" placeholder="Last Name...">
+
+          <label for="email"> Email </label>
+          <input type="text" id="email" name="email" placeholder="Email...">
+
+          <label for="message"> Message </label>
+          <textarea id="message" name="message" placeholder="Message..." style="height:200px"></textarea>
+
+          <input type="submit" name = "submit" value="Submit">
+        </form>
+      </div>
   </body>
 </html>

@@ -4,6 +4,7 @@
 }
 #main {
   overflow: auto;
+  border-bottom: 5px solid #000;
 }
 nav {
   width: 100%;
