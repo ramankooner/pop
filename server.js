@@ -75,8 +75,8 @@ app.get('/bad', (req, res) => {
 // Contact Form Email Sender
 app.post('/send', (req, res) => {
   const output = `
-    <p> Contact Form Request </p>
-    <h3> Contact Details </h3>
+    <h3> Contact Form Request </h3>
+    <p> Contact Details </p>
     <ul>
       <li>First Name: ${req.body.firstname}</li>
       <li>Last Name: ${req.body.lastname}</li>
@@ -91,8 +91,8 @@ app.post('/send', (req, res) => {
       // secure: false,
       service: 'gmail',
       auth: {
-        user: 'testtesttest67123@gmail.com',
-        pass: 'testaccount123!'
+        user: process.env.COMPANY_EMAIL,
+        pass: process.env.COMPANY_PASSWORD
       }
       // tls: {
       //    rejectUnauthorized: false
@@ -101,7 +101,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: 'testtesttest67123@gmail.com',
+      to: process.env.COMPANY_EMAIL,
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output
