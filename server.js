@@ -86,16 +86,17 @@ app.post('/send', (req, res) => {
     <p>${req.body.message}</p>`;
 
     let transporter = nodemailer.createTransport({
-      host: 'mail.populationadvertisements.com',
-      port: 587,
-      secure: false,
+      // host: 'mail.populationadvertisements.com',
+      // port: 587,
+      // secure: false,
+      service: 'gmail',
       auth: {
         user: config.COMPANY_EMAIL,
         pass: config.COMPANY_PASSWORD
       }
-      tls: {
-         rejectUnauthorized: false
-      }
+      // tls: {
+      //    rejectUnauthorized: false
+      // }
     });
 
     let mailOptions = {
