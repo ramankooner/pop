@@ -1,12 +1,16 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+var config = require('./config/config.json');
 
 const port = process.env.PORT || 3000;
 var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
 
+// View engine setup
 app.set('view engine', 'hbs');
 
 app.use((req, res, next) => {
@@ -27,7 +31,12 @@ app.use((req, res, next) => {
 //   res.render('maintenance.hbs');
 // });
 
+// Static Folder
 app.use(express.static(__dirname + '/public'));
+
+// Body Parser Middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear();
@@ -61,6 +70,51 @@ app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'
   });
+});
+
+// Contact Form Email Sender
+app.post('/send', (req, res) => {
+  const output = `
+    <p> Contact Form Request </p>
+    <h3> Contact Details </h3>
+    <ul>
+      <li>First Name: ${req.body.firstname}</li>
+      <li>Last Name: ${req.body.lastname}</li>
+      <li>Email: ${req.body.email}</li>
+    </ul>
+    <h3>Message </h3>
+    <p>${req.body.message}</p>`;
+
+    let transporter = nodemailer.createTransport({
+      host: 'mail.populationadvertisements.com',
+      port: 587,
+      secure: false,
+      auth: {
+        user: config.COMPANY_EMAIL,
+        pass: config.COMPANY_PASSWORD
+      }
+      tls: {
+         rejectUnauthorized: false
+      }
+    });
+
+    let mailOptions = {
+      from: '"Contact -- Population Advertisements"',
+      to: config.COMPANY_EMAIL,
+      subject: 'Node Contact Request',
+      text: 'Contact Request',
+      html: output
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+      res.render('contact', {msg: 'Email has been sent'});
+    });
 });
 
 app.listen(port, () => {

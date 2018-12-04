@@ -17,7 +17,7 @@
       </div>
 
       <div class = "contactForm">
-        <form id="contact" action="contactFormHandler.php" method="post" name = "form">
+        <form id="contact" action="send" method="POST">
           <label for="firstname"> First Name </label>
           <input type="text" id="firstName" name="firstname" placeholder="First Name..." required>
 
@@ -31,7 +31,6 @@
           <textarea id="message" name="message" placeholder="Message..." style="height:200px" required></textarea>
 
           <input type="submit" name = "submit" value="Submit">
-          <div class = "success"><?= $success; ?> </div>
         </form>
       </div>
     </div>
