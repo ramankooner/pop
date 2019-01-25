@@ -1,8 +1,255 @@
+html, body {
+  margin: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  background-color: #404040;
+  display: table-row;
+  height: 1px;
+}
+
 .footerClass {
-  position: fixed;
-  float: left;
-  font-family: 'Courgette', cursive;
+  padding: 40px;
+  height: auto;
+  margin: auto;
+}
+
+.footerClass ul {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.footerClass ul li {
   padding-left: 20px;
-  padding-bottom: 10px;
-  bottom: 0;
+  display: inline-table;
+  vertical-align: top;
+  padding-top: 10px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+
+.followBox {
+  width: 200px;
+  height: auto;
+}
+
+.followBox h6 {
+  font-size: 20px;
+  font-family: "Carter One", cursive;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.followBox ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.followBox ul li {
+  list-style-type: none;
+  padding-top: 2px;
+  text-align: left;
+}
+
+.followBox ul li a {
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.followBox ul li a i {
+  font-size: 14px;
+  color: #fff;
+  width: 20px;
+  height: auto;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.companyBox {
+  width: 200px;
+  height: auto;
+}
+
+.companyBox h5 {
+  font-size: 20px;
+  font-family: "Carter One", cursive;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.companyBox ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.companyBox ul li {
+  list-style-type: none;
+  padding-top: 2px;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.companyBox ul li a {
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.companyBox ul li a i {
+  font-size: 14px;
+  color: #fff;
+  width: 20px;
+  height: auto;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.contactBox {
+  width: 400px;
+  height: auto;
+}
+
+.contactBox h4 {
+  font-size: 20px;
+  font-family: "Carter One", cursive;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.contactBox h3 {
+  font-size: 20px;
+  font-family: "Carter One", cursive;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.contactBox ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contactBox ul li {
+  list-style-type: none;
+  padding-top: 2px;
+  text-align: left;
+  padding-right: 40px;
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width : 600px) {
+  .footerClass ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 0px;
+  }
+
+  .footerClass ul li {
+    padding-left: 0px;
+    padding-right: 60px;
+    display: inline-table;
+    vertical-align: top;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .contactBox {
+    width: 300px;
+    height: auto;
+  }
+  .followBox h6 {
+    font-size: 20px;
+    font-family: "Carter One", cursive;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+
+  .followBox ul li {
+    list-style-type: none;
+    padding-top: 2px;
+    text-align: center;
+    padding-left: 30px;
+  }
+
+  .companyBox h5 {
+    font-size: 20px;
+    font-family: "Carter One", cursive;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+  .companyBox ul li {
+    list-style-type: none;
+    padding-top: 2px;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .contactBox h4 {
+    font-size: 20px;
+    font-family: "Carter One", cursive;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+
+  .contactBox h3 {
+    font-size: 20px;
+    font-family: "Carter One", cursive;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+
+  .contactBox ul li {
+    list-style-type: none;
+    padding-top: 2px;
+    text-align: center;
+    padding-right: 10px;
+  }
 }
