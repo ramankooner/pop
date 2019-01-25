@@ -12834,3 +12834,16 @@ Fri Jan 25 2019 01:24:49 GMT-0800 (Pacific Standard Time): GET /images/raman.jpg
 Fri Jan 25 2019 01:24:49 GMT-0800 (Pacific Standard Time): GET /images/darrich.jpg
 Fri Jan 25 2019 01:24:49 GMT-0800 (Pacific Standard Time): GET /images/jose.jpg
 Fri Jan 25 2019 01:24:49 GMT-0800 (Pacific Standard Time): GET /images/websiteLogo48.png
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /about
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /css/headerStyle.css
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /css/aboutStyle.css
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /css/footerStyle.css
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /images/raman.jpg
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /images/darrich.jpg
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /images/jose.jpg
+Fri Jan 25 2019 01:29:19 GMT-0800 (Pacific Standard Time): GET /images/websiteLogo48.png
+Fri Jan 25 2019 01:29:34 GMT-0800 (Pacific Standard Time): GET /
+Fri Jan 25 2019 01:29:34 GMT-0800 (Pacific Standard Time): GET /css/mainStyle.css
+Fri Jan 25 2019 01:29:34 GMT-0800 (Pacific Standard Time): GET /css/headerStyle.css
+Fri Jan 25 2019 01:29:35 GMT-0800 (Pacific Standard Time): GET /images/trafficPicture7.png
+Fri Jan 25 2019 01:29:35 GMT-0800 (Pacific Standard Time): GET /images/websiteLogo48.png

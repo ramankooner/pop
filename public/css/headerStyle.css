@@ -173,6 +173,7 @@ body {
   background: #f1f1f1;
   width: 100%;
   border-bottom: 5px solid #000;
+  z-index: 99;
 }
 
 .navbar p{
