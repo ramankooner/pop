@@ -169,6 +169,7 @@ body {
   overflow: auto;
   top: 0;
   display: flex;
+  *display: inline;
   align-items: center;
   background: #f1f1f1;
   width: 100%;
@@ -176,10 +177,13 @@ body {
   z-index: 99;
 }
 
-.navbar p{
+.navbar a {
   font-size: 25px;
   font-family: 'Pacifico', cursive;
   padding-left: 10px;
+  transition: color 0.3s;
+  color: #000;
+  text-decoration: none;
 }
 .logo {
   background: url(../images/websiteLogo48.png) no-repeat 50% 50%;
@@ -187,7 +191,7 @@ body {
   width: 48px;
   height: 48px;
   float: left;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .menu {
   position: absolute;
@@ -197,6 +201,7 @@ body {
   color: #333;
   text-decoration: none;
   font-weight: 700;
+  font-size: 15px;
   margin-left: 20px;
   transition: color 0.3s;
   font-family: "Carter One", cursive;

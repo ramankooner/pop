@@ -74,6 +74,7 @@ app.get('/bad', (req, res) => {
 
 // Contact Form Email Sender
 app.post('/send', (req, res) => {
+
   const output = `
     <h3> Contact Form Request </h3>
     <p> Contact Details </p>
@@ -86,17 +87,13 @@ app.post('/send', (req, res) => {
     <p>${req.body.message}</p>`;
 
     let transporter = nodemailer.createTransport({
-      // host: 'mail.populationadvertisements.com',
-      // port: 587,
-      // secure: false,
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
       auth: {
         user: process.env.COMPANY_EMAIL,
         pass: process.env.COMPANY_PASSWORD
       }
-      // tls: {
-      //    rejectUnauthorized: false
-      // }
     });
 
     let mailOptions = {
