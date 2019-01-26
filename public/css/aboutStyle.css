@@ -21,7 +21,7 @@ h2 {
   padding: 40px;
   font-size: .9em;
   text-align: center;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   background-color: #f1f1f1;
 }
 
@@ -32,9 +32,9 @@ h2 {
 }
 .bottomHeader p {
   font-size: 2em;
+  font-weight: bold;
   text-align: center;
-  color: #696969;
-  font-family: "Carter One", cursive;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 *, *:before, *:after {
