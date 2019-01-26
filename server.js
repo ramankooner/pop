@@ -54,9 +54,15 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/services', (req, res) => {
-  res.render('services.hbs', {
-    pageTitle: 'Services'
+app.get('/drivers', (req, res) => {
+  res.render('drivers.hbs', {
+    pageTitle: 'Drivers'
+  });
+});
+
+app.get('/advertisers', (req, res) => {
+  res.render('advertisers.hbs', {
+    pageTitle: 'Advertisers'
   });
 });
 

@@ -224,7 +224,7 @@ body {
   height: 3px;
   background: #333;
 }
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 650px) {
   .navbar {
     overflow: visible;
     z-index: 99;
