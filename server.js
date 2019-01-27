@@ -3,8 +3,7 @@ const hbs = require('hbs');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const keys = require('./config/config');
-//var config = require('./config/config.json');
+//var config = require('./config/config');
 
 const port = process.env.PORT || 3000;
 var app = express();
@@ -98,7 +97,7 @@ app.post('/send', (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: 'population.advertisements@gmail.com',
+        user: process.env.COMPANY_EMAIL,
         pass: process.env.COMPANY_PASSWORD
       },
       tls: {
@@ -108,7 +107,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: 'population.advertisements@gmail.com',
+      to: process.env.COMPANY_EMAIL,
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output
@@ -127,4 +126,5 @@ app.post('/send', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
+  console.log(process.env.COMPANY_PASSWORD);
 });
