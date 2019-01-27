@@ -107,7 +107,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: 'population.advertisements@gmail.com',
+      to: 'population.advertisements@gmail.com, popademailsender@gmail.com',
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output

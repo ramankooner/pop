@@ -204,7 +204,7 @@ body {
   font-size: 15px;
   margin-left: 20px;
   transition: color 0.3s;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
 }
 .menu a:hover {
   color: #6ab04c;

@@ -41,7 +41,7 @@ footer {
 
 .followBox h6 {
   font-size: 20px;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   color: #fff;
   text-align: center;
   margin: 0px;
@@ -59,10 +59,12 @@ footer {
   list-style-type: none;
   padding-top: 2px;
   text-align: left;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .followBox ul li a {
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
@@ -85,7 +87,7 @@ footer {
 
 .companyBox h5 {
   font-size: 20px;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   color: #fff;
   text-align: center;
   margin: 0px;
@@ -104,10 +106,11 @@ footer {
   padding-top: 2px;
   text-align: left;
   padding-right: 40px;
+  padding-left: 40px;
 }
 
 .companyBox ul li a {
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
@@ -129,7 +132,7 @@ footer {
 
 .contactBox h4 {
   font-size: 20px;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   color: #fff;
   text-align: center;
   margin: 0px;
@@ -140,7 +143,7 @@ footer {
 
 .contactBox h3 {
   font-size: 20px;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   color: #fff;
   text-align: center;
   margin: 0px;
@@ -160,7 +163,7 @@ footer {
   padding-top: 2px;
   text-align: left;
   padding-right: 40px;
-  font-family: "Carter One", cursive;
+  font-family: "Muli", sans-serif;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
@@ -190,7 +193,7 @@ footer {
   }
   .followBox h6 {
     font-size: 20px;
-    font-family: "Carter One", cursive;
+    font-family: "Muli", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0px;
@@ -209,7 +212,7 @@ footer {
 
   .companyBox h5 {
     font-size: 20px;
-    font-family: "Carter One", cursive;
+    font-family: "Muli", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0px;
@@ -227,7 +230,7 @@ footer {
   }
   .contactBox h4 {
     font-size: 20px;
-    font-family: "Carter One", cursive;
+    font-family: "Muli", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0px;
@@ -239,7 +242,7 @@ footer {
 
   .contactBox h3 {
     font-size: 20px;
-    font-family: "Carter One", cursive;
+    font-family: "Muli", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0px;
