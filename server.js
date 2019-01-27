@@ -3,7 +3,7 @@ const hbs = require('hbs');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const keys = require('./config/prod');
+const keys = require('./config/config');
 //var config = require('./config/config.json');
 
 const port = process.env.PORT || 3000;
