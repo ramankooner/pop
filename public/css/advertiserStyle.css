@@ -1,3 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
   background: url('../images/backgroundAbout.png');
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding: 30px;
+  padding-top: 0px;
+}
+.container {
+  font-size: 1em;
+  text-align: center;
+  line-height: 2.3em;
+  font-family: "Muli", sans-serif;
+}
+.container h3 {
+  font-size: 1.5em;
+}
+#showcase {
+  background-image: url('../images/companyPlaces6.jpeg');
+  height: 50vh;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #333;
+}
+
+#showcase h1 {
+  font-size: 2.5em;
+}
+
+
+#showcase .button {
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+  border: #000000 3px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#showcase .button:hover {
+  background: #707070;
+  color: #fff;
+}
+
+#headerContent {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#headerContent h2 {
+  padding: 40px;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+@media only screen and (max-width : 650px) {
+  #showcase h1 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+  h2 {
+    display: block;
+  }
 }

@@ -3,6 +3,7 @@ const hbs = require('hbs');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const keys = require('./config/config')
 //var config = require('./config/config.json');
 
 const port = process.env.PORT || 3000;
@@ -97,14 +98,17 @@ app.post('/send', (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.COMPANY_EMAIL,
-        pass: process.env.COMPANY_PASSWORD
+        user: keys.companyEmail,
+        pass: keys.companyPassword
+      },
+      tls: {
+        rejectUnauthorized: false
       }
     });
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: process.env.COMPANY_EMAIL,
+      to: keys.companyEmail,
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output
