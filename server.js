@@ -98,8 +98,8 @@ app.post('/send', (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: keys.companyEmail,
-        pass: keys.companyPassword
+        user: 'population.advertisements@gmail.com',
+        pass: process.env.COMPANY_PASSWORD
       },
       tls: {
         rejectUnauthorized: false
@@ -108,7 +108,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: keys.companyEmail,
+      to: 'population.advertisements@gmail.com',
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output
