@@ -97,8 +97,8 @@ app.post('/send', (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.COMPANY_EMAIL,
-        pass: process.env.COMPANY_PASSWORD
+        user: 'popademailsender@gmail.com',
+        pass: 'popadiscool'
       },
       tls: {
         rejectUnauthorized: false
@@ -107,7 +107,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
       from: '"Contact -- Population Advertisements"',
-      to: process.env.COMPANY_EMAIL,
+      to: 'population.advertisements@gmail.com',
       subject: 'Node Contact Request',
       text: 'Contact Request',
       html: output
@@ -126,5 +126,4 @@ app.post('/send', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
-  console.log(process.env.COMPANY_PASSWORD);
 });
