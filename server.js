@@ -3,12 +3,19 @@ const hbs = require('hbs');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+var sslRedirect = require('strong-ssl-redirect');
 //var config = require('./config/config');
 
 const port = process.env.PORT || 3000;
 var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
+var environment = 'production';
+app.use(sslRedirect({
+  environment,
+  www: true,
+  status: 301
+}));
 
 // View engine setup
 app.set('view engine', 'hbs');
