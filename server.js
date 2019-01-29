@@ -11,6 +11,8 @@ var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
 var environment = 'production';
+
+// SSL Redirect
 app.use(sslRedirect({
   environment,
   www: true,
