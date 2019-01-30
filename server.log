@@ -21244,3 +21244,15 @@ Tue Jan 29 2019 20:02:23 GMT-0800 (Pacific Standard Time): GET /css/headerStyle.
 Tue Jan 29 2019 20:02:23 GMT-0800 (Pacific Standard Time): GET /css/footerStyle.css
 Tue Jan 29 2019 20:02:23 GMT-0800 (Pacific Standard Time): GET /images/backgroundAbout.png
 Tue Jan 29 2019 20:02:23 GMT-0800 (Pacific Standard Time): GET /images/websiteLogo48.png
+Tue Jan 29 2019 20:07:21 GMT-0800 (Pacific Standard Time): GET /contact
+Tue Jan 29 2019 20:07:21 GMT-0800 (Pacific Standard Time): GET /css/contactStyle.css
+Tue Jan 29 2019 20:07:21 GMT-0800 (Pacific Standard Time): GET /css/headerStyle.css
+Tue Jan 29 2019 20:07:21 GMT-0800 (Pacific Standard Time): GET /css/footerStyle.css
+Tue Jan 29 2019 20:07:21 GMT-0800 (Pacific Standard Time): GET /images/backgroundAbout.png
+Tue Jan 29 2019 20:07:21 GMT-0800 (Pacific Standard Time): GET /images/websiteLogo48.png
+Tue Jan 29 2019 20:07:26 GMT-0800 (Pacific Standard Time): POST /send
+Tue Jan 29 2019 20:07:28 GMT-0800 (Pacific Standard Time): GET /css/contactStyle.css
+Tue Jan 29 2019 20:07:28 GMT-0800 (Pacific Standard Time): GET /css/headerStyle.css
+Tue Jan 29 2019 20:07:28 GMT-0800 (Pacific Standard Time): GET /css/footerStyle.css
+Tue Jan 29 2019 20:07:28 GMT-0800 (Pacific Standard Time): GET /images/backgroundAbout.png
+Tue Jan 29 2019 20:07:28 GMT-0800 (Pacific Standard Time): GET /images/websiteLogo48.png

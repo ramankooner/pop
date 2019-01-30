@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const keys = require('./../config/keys');
+const keys = require('./../config/config');
 
 module.exports = (app) => {
   // Contact Form Email Sender
