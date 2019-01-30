@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const keys = require('./../config/keys');
 
 module.exports = (app) => {
   // Contact Form Email Sender
@@ -20,8 +21,8 @@ module.exports = (app) => {
         port: 465,
         secure: true,
         auth: {
-          user: 'popademailsender@gmail.com',
-          pass: 'popadiscool'
+          user: process.env.COMPANY_EMAIL || keys.companyEmail,
+          pass: process.env.COMPANY_PASSWORD || keys.companyPassword
         },
         tls: {
           rejectUnauthorized: false
@@ -30,7 +31,7 @@ module.exports = (app) => {
 
       let mailOptions = {
         from: '"Contact -- Population Advertisements"',
-        to: 'contact@populationadvertisements.com',
+        to: process.env.COMPANY_EMAIL || keys.companyEmail,
         subject: 'Node Contact Request',
         text: 'Contact Request',
         html: output
