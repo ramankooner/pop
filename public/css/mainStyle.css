@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+#showcase {
+  background-image: url('../images/carguy15.jpg');
+  height: 100vh;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  font-family: "Muli", sans-serif;
+  color: #333;
+}
+
+#showcase h1 {
+  font-style: normal;
+  font-size: 3.5em;
+}
+
+#showcase .button {
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+  border: #000000 3px solid;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+#showcase .button:hover {
+  background: #707070;
+  color: #fff;
+}
+
+@media only screen and (max-width : 600px) {
+  #showcase h1 {
+    font-size: 2.9em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  background: url('../images/backgroundAbout.png');
+}
+
+#showcase {
+  background-image: url('../images/roadPicture.jpeg');
+  height: 50vh;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  font-family: "Muli", sans-serif;
+  color: #333;
+}
+
+#showcase h1 {
+  font-size: 2.5em;
+}
+
+#showcase .button {
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+  border: #000000 3px solid;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+#showcase .button:hover {
+  background: #707070;
+  color: #fff;
+}
+
+#content {
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#content p {
+  padding: 40px;
+  font-size: .9em;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  background-color: #f1f1f1;
+}
+
+#headerContent {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#headerContent h2 {
+  padding: 40px;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+}
+
+.row2 {
+  display: none;
+}
+.column1 {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 300px;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+}
+.imageClass {
+  background-image: url('../images/signUp.jpeg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.imageClass1 {
+  background-image: url('../images/carPhone.jpeg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.imageClass2 {
+  background-image: url('../images/happyPerson.jpeg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column1 p {
+  padding-top: 100px;
+}
+
+.getStarted {
+  text-align: center;
+  padding: 20px;
+  padding-top: 930px;
+
+}
+
+.getStarted .button {
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+  border: #000000 3px solid;
+  padding: 10px 20px;
+}
+
+.getStarted .button:hover {
+  background: #707070;
+  color: #fff;
+}
+
+@media only screen and (max-width : 650px) {
+  #showcase h1 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .row1 {
+    display: none;
+  }
+
+  .row2 {
+    display: contents;
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+  .column1 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .column1 p {
+    padding-top: 10px;
+  }
+  .getStarted {
+    text-align: center;
+    padding: 20px;
+    padding-top: 910px;
+  }
+}

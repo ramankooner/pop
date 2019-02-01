@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  height: 80px;
+  zoom: 1;
+  overflow: auto;
+  top: 0;
+  display: flex;
+  *display: inline;
+  align-items: center;
+  background: #f1f1f1;
+  width: 100%;
+  border-bottom: 5px solid #000;
+  z-index: 99;
+}
+
+.navbar a {
+  font-size: 25px;
+  font-family: 'Pacifico', cursive;
+  padding-left: 10px;
+  transition: color 0.3s;
+  color: #000;
+  text-decoration: none;
+}
+.logo {
+  background: url(../images/websiteLogo48.png) no-repeat 50% 50%;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-left: 30px;
+}
+.menu {
+  position: absolute;
+  right: 70px;
+}
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 20px;
+  transition: color 0.3s;
+  font-family: "Muli", sans-serif;
+}
+.menu a:hover {
+  color: #6ab04c;
+}
+.btn {
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+.btn:hover > span{
+  background: #6ab04c;
+}
+.btn span {
+  display: block;
+  margin: 6px;
+  width: 30px;
+  height: 3px;
+  background: #333;
+}
+@media only screen and (max-width : 875px) {
+  .titleName {
+    display: none;
+  }
+  .navbar {
+    overflow: visible;
+    z-index: 99;
+  }
+  .menu {
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-top: : 3px solid #000;
+    border-bottom: 3px solid #000;
+
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+  .show {
+    max-height: 600px;
+  }
+}
