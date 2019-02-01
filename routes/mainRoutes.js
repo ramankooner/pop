@@ -1,4 +1,6 @@
 module.exports = (app) => {
+
+  // Navigation Bar Routes
   app.get('/', (req, res) => {
     res.render('home.hbs', {
       pageTitle: 'Home'
