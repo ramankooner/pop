@@ -14,7 +14,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 // SSL Redirect
 var environment = 'production';
 
-// Redirect 
+// Redirect.
 app.use(sslRedirect({
   environment,
   www: true,
