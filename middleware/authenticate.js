@@ -1,6 +1,6 @@
 const keys = require('./../config/config');
 
-var admin = (req, res, next) => {
+var authenticate = (req, res, next) => {
 
   // Check for access code. Set key to the access code label
   var key = req.body.accessCode;

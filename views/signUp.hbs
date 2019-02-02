@@ -4,12 +4,68 @@
     <meta charset = "utf-8">
     <link rel='icon' href='../images/favicon/favicon.ico' type='image/x-icon'/ >
     <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon" />
-    <title> Sign Up </title>
+    <title> 2019 Beta Sign Up </title>
     <link rel="stylesheet" href = "../css/signUp.css">
   </head>
   <body>
       {{>header}}
+      <div class = "container">
+        <div style="text-align:center">
+          <h2> Personal Information </h2>
+        </div>
 
+        <div class = "signUpForm">
+          <form id="signUp" action="sendSignUp" method="POST">
+            <label for="email"> Email* </label>
+            <input type="text" id="email" name="email" placeholder="Email..." required>
+
+            <label for="firstname"> First Name* </label>
+            <input type="text" id="firstName" name="firstname" placeholder="First Name..." required>
+
+            <label for="lastname"> Last Name* </label>
+            <input type="text" id="lastName" name="lastname" placeholder="Last Name..." required>
+
+            <label for="birthDate"> Birth Date* </label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="address1"> Address 1* </label>
+            <input type="text" id="address1" name="address1" placeholder="Address 1..."required>
+
+            <label for="address2"> Address 2 </label>
+            <input type="text" id="address2" placeholder="Address 2..." name="address2">
+
+            <label for="city"> City* </label>
+            <input type="text" id="city" name="city" placeholder="City..." required>
+
+            <label for="state"> State* </label>
+            <input type="text" id="state" name="state" placeholder="State..." required>
+
+            <label for="zipCode"> Zip Code* </label>
+            <input type="text" id="zipCode" name="zipCode" placeholder="Zip Code..." required>    
+
+            <label for="phoneNumber"> Phone Number </label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number..." required>
+
+            <h2> Car Information </h2>
+
+            <label for="carMake"> Car Make* </label>
+            <input type="text" id="carMake" name="carMake" placeholder="Ex. Honda, Toyota..." required>
+
+            <label for="carModel"> Car Model* </label>
+            <input type="text" id="carModel" name="carModel" placeholder="Ex. Civic, Tacoma..." required>
+
+            <label for="carYear"> Car Year* </label>
+            <input type="text" id="carYear" name="carYear" placeholder="Car Year..." required>
+
+            <label for="carColor"> Car Color* </label>
+            <input type="text" id="carColor" name="carColor" placeholder="Car Color..." required>
+
+            <div class = "buttonClass">
+              <input type="submit" name = "submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
       {{>footer}}
   </body>
 </html>

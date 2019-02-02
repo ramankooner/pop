@@ -4,6 +4,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 var sslRedirect = require('strong-ssl-redirect');
+require('./config/config')
 
 const port = process.env.PORT || 3000;
 
@@ -58,6 +59,7 @@ hbs.registerHelper('getCurrentYear', () => {
 // Require Routes
 require('./routes/mainRoutes')(app);
 require('./routes/notificationRoutes')(app);
+require('./routes/signUpRoutes')(app);
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);

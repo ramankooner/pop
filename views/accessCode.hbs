@@ -4,12 +4,26 @@
     <meta charset = "utf-8">
     <link rel='icon' href='../images/favicon/favicon.ico' type='image/x-icon'/ >
     <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon" />
-    <title> Access </title>
+    <title> 2019 Beta Testing </title>
     <link rel="stylesheet" href = "../css/accessCode.css">
   </head>
   <body>
       {{>header}}
-      
+      <div class = "container">
+        <div style="text-align:center">
+          <h2> Enter Access Code </h2>
+        </div>
+
+        <div class = "accessForm">
+          <form id="contact" action="accessSend" method="POST">
+            <input type="text" id="accessCode" name="accessCode" placeholder="Access Code" required>
+
+            <div class = "buttonClass">
+              <input type="submit" name = "submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
       {{>footer}}
   </body>
 </html>
