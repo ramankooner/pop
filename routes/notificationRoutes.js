@@ -32,7 +32,7 @@ module.exports = (app) => {
       let mailOptions = {
         from: '"Contact -- Population Advertisements"',
         to: process.env.COMPANY_EMAIL,
-        subject: 'Contact Request',
+        subject: `Contact Request -- ${req.body.firstname} ${req.body.lastname}`,
         text: 'Contact Request',
         html: output
       };
@@ -90,7 +90,7 @@ module.exports = (app) => {
       let mailOptions = {
         from: '"Sign Up -- Population Advertisements"',
         to: process.env.COMPANY_EMAIL,
-        subject: 'Sign Up Request',
+        subject: `Sign Up Request -- ${req.body.firstname} ${req.body.lastname}`,
         text: 'Sign Up Request',
         html: output
       };
