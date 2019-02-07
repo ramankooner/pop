@@ -4,7 +4,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 var sslRedirect = require('strong-ssl-redirect');
-require('./config/config')
+require('./config/config');
 
 const port = process.env.PORT || 3000;
 

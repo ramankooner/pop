@@ -31,6 +31,12 @@ module.exports = (app) => {
     });
   });
 
+  app.get('/privacyPolicy', (req, res) => {
+    res.render('privacyPolicy.hbs', {
+      pageTitle: 'Privacy Policy'
+    });
+  });
+
   app.get('/bad', (req, res) => {
     res.send({
       errorMessage: 'Unable to handle request'
