@@ -11,9 +11,9 @@ body {
   display: flex;
   *display: inline;
   align-items: center;
-  background: #f1f1f1;
+  background: #ffff;
   width: 100%;
-  border-bottom: 5px solid #000;
+  border-bottom: 1px solid #f1f1f1;
   z-index: 99;
 }
 
@@ -25,6 +25,9 @@ body {
   color: #000;
   text-decoration: none;
 }
+
+
+
 .logo a{
   background: url(../images/websiteLogo48.png) no-repeat 50% 50%;
   background-size: contain;
@@ -47,7 +50,7 @@ body {
   font-family: "Muli", sans-serif;
 }
 .menu a:hover {
-  color: #6ab04c;
+  color: #008080;
 }
 .btn {
   display: none;
@@ -55,7 +58,7 @@ body {
   right: 20px;
 }
 .btn:hover > span{
-  background: #6ab04c;
+  background: #008080;
 }
 .btn span {
   display: block;

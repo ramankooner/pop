@@ -1,5 +1,5 @@
 body {
-  background: url('../images/backgroundAbout.png');
+  /*background: url('../images/backgroundAbout.png');*/
 }
 .row {
   box-sizing: border-box;
@@ -50,7 +50,7 @@ h2 {
 }
 
 .column img {
-  -webkit-filter: grayscale(80%); 
+  -webkit-filter: grayscale(80%);
   filter: grayscale(70%);
   border-radius: 50%;
 }
