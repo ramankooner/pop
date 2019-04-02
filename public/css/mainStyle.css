@@ -192,10 +192,7 @@ body {
     opacity: 0;
     padding-left: 10px;
   }
-
-
 }
-
 
 @media only screen and (max-width: 540px) {
 
@@ -215,11 +212,20 @@ body {
   }
 
   .word {
+    -webkit-position: fixed;
+    -webkit-box-sizing: border-box;
+
     opacity: 0;
     width: 220px;
-    padding-top: 200px;
-    padding-right: 200px;
+
+    margin-right: 200px;
+    margin-top: 200px;
+
+    -webkit-margin-before: 100px;
+    -webkit-margin-start: -100px;
+    
     padding-left: 0px;
+    border: 1px solid;
   }
 
   #showcase ul li {

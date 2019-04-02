@@ -67,6 +67,7 @@ body {
   height: 3px;
   background: #333;
 }
+
 @media only screen and (max-width : 875px) {
   .titleName {
     display: none;
