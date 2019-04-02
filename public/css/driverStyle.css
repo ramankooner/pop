@@ -97,7 +97,7 @@ body {
 #headerContent h2 {
   padding: 40px;
   font-size: 2.5em;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #008080;
 }
 
@@ -125,7 +125,7 @@ body {
 #headerContent2 h2 {
   padding: 40px;
   font-size: 2.5em;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #008080;
 }
 
@@ -227,7 +227,7 @@ body {
 #headerContent3 h2 {
   padding: 40px;
   font-size: 2.5em;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #008080;
 }
 
@@ -297,7 +297,7 @@ th {
 #headerContent4 h2 {
   padding: 40px;
   font-size: 2.5em;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #008080;
 }
 
@@ -406,7 +406,7 @@ th {
     background-size: cover;
     background-position: center;
     padding: 0 20px;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: #008080 2px solid;
@@ -423,7 +423,7 @@ th {
     background-size: cover;
     background-position: center;
     padding: 0 20px;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: #008080 2px solid;
@@ -440,7 +440,7 @@ th {
     background-size: cover;
     background-position: center;
     padding: 0 20px;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: #008080 2px solid;
@@ -496,28 +496,28 @@ th {
   #headerContent4 h2 {
     padding: 40px;
     font-size: 2em;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     color: #008080;
   }
 
   #headerContent3 h2 {
     padding: 40px;
     font-size: 2em;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     color: #008080;
   }
 
   #headerContent2 h2 {
     padding: 40px;
     font-size: 2em;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     color: #008080;
   }
 
   #headerContent h2 {
     padding: 40px;
     font-size: 2em;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     color: #008080;
   }
 
@@ -536,7 +536,7 @@ th {
     background-size: cover;
     background-position: center;
     padding: 0 20px;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: #008080 2px solid;
@@ -555,7 +555,7 @@ th {
     background-size: cover;
     background-position: center;
     padding: 0 20px;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: #008080 2px solid;
