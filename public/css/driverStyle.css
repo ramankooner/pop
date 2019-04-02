@@ -527,7 +527,7 @@ th {
   }
 
   #headerContent3 {
-    margin-top: 900px;
+    margin-top: 800px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -546,7 +546,26 @@ th {
 
 @media only screen and (max-width : 400px) {
   #headerContent3 {
-    margin-top: 1050px;
+    margin-top: 900px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: #008080 2px solid;
+    background-color: #def2f1;
+  }
+}
+
+@media only screen and (max-width : 350px) {
+  #headerContent3 {
+    margin-top: 1100px;
     display: flex;
     text-align: center;
     flex-direction: column;
