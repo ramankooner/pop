@@ -569,14 +569,14 @@ body {
   .box .content h2 {
     margin: 0;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
     font-size: 1.2em;
     font-family: "Frank Ruhl Libre", serif;
   }
 
   .box .content p {
     margin: 0;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-top: 20px;
     padding-right: 10px;
     text-align: left;
@@ -665,6 +665,10 @@ body {
     font-family: "Frank Ruhl Libre", serif;
     color: #333;
 
+  }
+
+  #headerContent4 {
+    margin-top: 100px;
   }
 
   #headerContent4 h2 {

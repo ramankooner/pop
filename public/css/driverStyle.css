@@ -11,7 +11,7 @@ body {
 }
 
 #showcase {
-  background-image: url('../images/lightBlue.jpg');
+  background-color: #cec2f3;
   height: 70vh;
   margin-top: 20px;
   display: flex;
@@ -23,7 +23,6 @@ body {
   background-position: center;
   padding: 0 20px;
   font-family: "Roboto", sans-serif;
-  color: #333;
 }
 
 #showcase .textBox {
@@ -32,7 +31,7 @@ body {
 
 #showcase .textBox h1 {
   font-size: 4.5em;
-  color: #008080;
+  color: #333;
 }
 
 #showcase .textBox .buttonClass {
@@ -42,7 +41,7 @@ body {
 #showcase .button {
   font-size: 18px;
   font-family: "Muli",sans-serif;
-  background-color: #008080;
+  background-color: #333;
   color: #fff;
   text-decoration: none;
   border-radius: 2px;
@@ -56,24 +55,29 @@ body {
   color: #fff;
 }
 
-/*
-#content {
-  text-align: center;
-  word-wrap: break-word;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.headerImage {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 999px;
+  box-sizing: border-box;
 }
 
-#content p {
-  padding: 40px;
-  font-size: .9em;
+.headerImage .imgBox {
+  display: flex;
   text-align: center;
-  font-family: "Muli", sans-serif;
-  background-color: #f1f1f1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
-*/
 
-#headerContent {
+.headerImage img {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+
+#headerContent1 {
   margin-top: 100px;
   display: flex;
   text-align: center;
@@ -84,25 +88,66 @@ body {
   background-position: center;
   padding: 0 20px;
   font-family: "Roboto", sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-bottom: #008080 2px solid;
-  background-color: #9fedd7;
+  background-color: #f1f1f1;
 }
 
-#headerContent .howItWorks {
-  text-align: left;
+#headerContent1 .headline {
+  text-align: center;
 }
 
-#headerContent h2 {
-  padding: 40px;
+#headerContent1 h2 {
+  padding: 70px;
   font-size: 2.5em;
-  font-family: "Roboto", sans-serif;
-  color: #008080;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #333;
+}
+
+
+.box {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.box .imgBox {
+  width: 100%;
+  flex: 0 0 450px;
+  padding-right: 0px;
+}
+
+.box .imgBox img {
+  max-width: 100%;
+  padding-left: 20px;
+}
+
+.box .content {
+  padding-left: 20px;
+}
+
+.box .content h2 {
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 2em;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.box .content p {
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 60px;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 2em;
+  font-family: "Muli", sans-serif;
 }
 
 #headerContent2 {
-  margin-top: 450px;
+  margin-top: 150px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -111,473 +156,313 @@ body {
   background-size: cover;
   background-position: center;
   padding: 0 20px;
-  font-family: "Roboto", sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-bottom: #008080 2px solid;
-  background-image: url('../images/d1e8e2.png');
 }
 
-#headerContent2 .eligible {
+#headerContent2 .headline {
   text-align: center;
 }
 
 #headerContent2 h2 {
-  padding: 40px;
   font-size: 2.5em;
-  font-family: "Roboto", sans-serif;
-  color: #008080;
-}
-
-.overall {
-  margin-left: 20%;
-  margin-right: 20%;
-
+  font-family: "Frank Ruhl Libre", serif;
+  color: #333;
 }
 
 .row {
+  margin: 0 auto;
   box-sizing: border-box;
+  width: 1000px;
+  display: flex;
 }
 
 .column {
   float: left;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 33%;
   margin-top: 20px;
   margin-bottom: 16px;
+  padding-top: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .container {
   font-size: 1em;
-  text-align: left;
-  line-height: 2.3em;
+  text-align: justify;
+  line-height: 1.9em;
   font-family: "Muli", sans-serif;
 }
-
-.container .listContainer {
-  text-align: left;
-}
-
-.container ul {
-  padding-left: 50px;
-}
 .container h3 {
-  font-size: 1.5em;
-  font-family: "Cormorant", serif;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .row1 {
-  padding-top: 20px;
+  margin: 0 auto;
   box-sizing: border-box;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 1000px;
+  display: flex;
 }
 
 .column1 {
   float: left;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 33%;
   margin-top: 20px;
   margin-bottom: 16px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .container1 {
   font-size: 1em;
-  text-align: center;
-  line-height: 2.3em;
+  text-align: justify;
+  line-height: 1.9em;
   font-family: "Muli", sans-serif;
+}
+
+.container1 .listContainer {
+  text-align: left;
+}
+
+.container1 ul {
+  padding-left: 50px;
 }
 
 .container1 h3 {
-  font-size: 1.5em;
-  font-family: "Cormorant", serif;
+  font-size: 1.2em;
+  text-align: left;
 }
 
-#headerContent3 {
-  margin-top: 390px;
+.box2 {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 1000px;
+  padding: 5px;
+  box-sizing: border-box;
   display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  padding: 0 20px;
-  font-family: "Roboto", sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-bottom: #008080 2px solid;
-  background-color: #def2f1;
 }
 
-#headerContent3 .payRates {
-  text-align: center;
-
+.box2 .content2 {
+  padding-left: 30px;
+  padding-right: 60px;
+  padding-top: 0px;
+  padding-bottom: 70px;
 }
 
-#headerContent3 h2 {
-  padding: 40px;
-  font-size: 2.5em;
-  font-family: "Roboto", sans-serif;
-  color: #008080;
-}
-
-.tableRates {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-table {
-  text-align: center;
-}
-
-td {
-  text-align: center;
-  padding: 12px;
-  padding-left: 70px;
-  padding-right: 70px;
-  font-size: 1em;
-  font-family: "Muli", sans-serif;
-}
-
-th {
-  font-size: 1.5em;
-  font-family: "Cormorant", serif;
-  text-align: center;
-  padding: 12px;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-.example {
-  margin-top: 20px;
-  padding: 10px;
-  text-align: center;
-  word-wrap: break-word;
-  font-size: 1em;
-  font-family: "Muli", sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-#headerContent4 {
-  margin-top: 100px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  padding: 0 20px;
-  font-family: "Roboto", sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-bottom: #008080 2px solid;
-  background-color: #99ced3;
-}
-
-#headerContent4 .dontHesitate {
-  text-align: center;
-
-}
-
-#headerContent4 h2 {
-  padding: 40px;
-  font-size: 2.5em;
-  font-family: "Roboto", sans-serif;
-  color: #008080;
-}
-
-/*
-.row2 {
-  display: none;
-}
-.column1 {
-  float: left;
-  display: block;
-  width: 50%;
-  height: 300px;
-  font-size: 1.5em;
-  text-align: center;
-  font-family: "Muli", sans-serif;
-}
-.imageClass {
-  background-image: url('../images/signUp.jpeg');
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-.imageClass1 {
-  background-image: url('../images/carPhone.jpeg');
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-.imageClass2 {
-  background-image: url('../images/happyPerson.jpeg');
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-
-.column1 p {
+.box2 .content2 h2 {
+  margin: 0;
   padding-top: 100px;
-}
-*/
-
-.getStarted {
-  text-align: center;
-  padding: 20px;
-  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 1.5em;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #333;
 }
 
-.getStarted .button {
-  font-size: 18px;
-  font-family: "Muli",sans-serif;
-  background-color: #008080;
-  color: #fff;
+.box2 .content2 p {
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 2em;
+  font-family: "Muli", sans-serif;
+}
+
+.box2 .content2 p a {
+  color: #1183ca;
   text-decoration: none;
-  border-radius: 2px;
-  padding: 10px 30px;
-  box-shadow: 3px 4px 6px grey;
-  margin-top: 30px;
-}
-
-.getStarted .button:hover {
-  background: #707070;
-  color: #fff;
-}
-
-@media only screen and (max-width : 1100px) {
-  #headerContent2 {
-    margin-top: 500px;
-  }
 }
 
 @media only screen and (max-width : 1000px) {
-
-
-  #headerContent .howItWorks {
-    text-align: center;
-  }
-
-  td {
-    text-align: center;
-    padding: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: .9em;
-    font-family: "Muli", sans-serif;
-  }
-
-  th {
-    font-size: 1.3em;
-    font-family: "Cormorant", serif;
-    text-align: center;
-    padding: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
   #showcase .textBox h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
+    text-align: left;
   }
 
-  #headerContent2 {
-    margin-top: 1000px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    padding: 0 20px;
-    font-family: "Roboto", sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: #008080 2px solid;
-    background-image: url('../images/d1e8e2.png');
-  }
-
-  #headerContent3 {
-    margin-top: 700px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    padding: 0 20px;
-    font-family: "Roboto", sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: #008080 2px solid;
-    background-color: #def2f1;
-  }
-
-  #headerContent4 {
+  .box {
+    margin: 0 auto;
     margin-top: 100px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    padding: 0 20px;
-    font-family: "Roboto", sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: #008080 2px solid;
-    background-color: #99ced3;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
   }
 
-  .column {
-    width: 100%;
-    display: block;
-  }
-  .column1 {
-    float: left;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    padding-bottom: 1px;
-  }
-  h2 {
-    display: block;
+  .box .imgBox img {
+    max-width: 100%;
+    padding-left: 0px;
   }
 
-  /*
-  .row1 {
+  .headerImage {
     display: none;
   }
 
-  .row2 {
-    display: contents;
-    margin-top: 0px;
-    padding-bottom: 10px;
-  }
-  .column1 {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-  .column1 p {
-    padding-top: 10px;
-  }
-  */
-
-
-}
-
-@media only screen and (max-width : 500px) {
-
-
-  #headerContent4 h2 {
-    padding: 40px;
-    font-size: 2em;
-    font-family: "Roboto", sans-serif;
-    color: #008080;
+  .headerSmall {
+    height: 400px;
+    background-image: url('../images/driverPage/headBanner.jpg');
+    background-size: cover;
+    background-position: 35%;
+    margin: 20px;
+    margin-top: 150px;
   }
 
-  #headerContent3 h2 {
-    padding: 40px;
-    font-size: 2em;
-    font-family: "Roboto", sans-serif;
-    color: #008080;
+  #headerContent1 h2 {
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #333;
+  }
+
+  #headerContent2 {
+    margin-top: 50px;
   }
 
   #headerContent2 h2 {
-    padding: 40px;
-    font-size: 2em;
-    font-family: "Roboto", sans-serif;
-    color: #008080;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #333;
   }
 
-  #headerContent h2 {
-    padding: 40px;
-    font-size: 2em;
-    font-family: "Roboto", sans-serif;
-    color: #008080;
+  .row {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
   }
 
-  #showcase .textBox h1 {
-    font-size: 2em;
-    color: #008080;
-  }
+  .column {
+    float: left;
+    width: 99%;
 
-  #headerContent3 {
-    margin-top: 800px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    padding: 0 20px;
-    font-family: "Roboto", sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: #008080 2px solid;
-    background-color: #def2f1;
+  }
+
+  .column img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .container {
+    font-size: .8em;
+    text-align: left;
+    line-height: 1.9em;
+    font-family: "Muli", sans-serif;
+  }
+
+  .container h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .row1 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .column1 {
+    float: left;
+    width: 99%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    display: inline-block;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container1 {
+    font-size: .8em;
+    text-align: left;
+    line-height: 1.9em;
+    font-family: "Muli", sans-serif;
+  }
+
+  .container1 h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .listContainer ul {
+    padding-left: 35%;
+    float: inherit;
+  }
+
+  .box2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .box2 .content2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
+
+  .box2 .content2 h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 1.2em;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #333;
+    text-align: center;
+  }
+
+  .box2 .content2 p {
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    text-align: left;
+    font-size: .8em;
+    line-height: 2em;
+    font-family: "Muli", sans-serif;
+    text-align: center;
   }
 }
 
-@media only screen and (max-width : 400px) {
-  #headerContent3 {
-    margin-top: 900px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    padding: 0 20px;
-    font-family: "Roboto", sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: #008080 2px solid;
-    background-color: #def2f1;
+@media only screen and (max-width: 540px) {
+  .listContainer ul {
+    padding-left: 30%;
+    float: inherit;
   }
-}
 
-@media only screen and (max-width : 350px) {
-  #headerContent3 {
-    margin-top: 1100px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    padding: 0 20px;
-    font-family: "Roboto", sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: #008080 2px solid;
-    background-color: #def2f1;
+  .box .content h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-family: "Frank Ruhl Libre", serif;
+  }
+
+  .box .content p {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: .8em;
+    line-height: 2.3em;
+    font-family: "Muli", sans-serif;
   }
 }
