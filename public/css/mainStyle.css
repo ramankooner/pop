@@ -401,6 +401,52 @@ body {
   text-align: center;
 }
 
+.box3 {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 1000px;
+  padding: 20px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.box3 .imgBox3 {
+  width: 100%;
+  flex: 0 0 575px;
+}
+
+.box3 .imgBox3 img {
+  max-width: 100%;
+}
+
+.box3 .content3 {
+  padding-left: 20px;
+}
+
+.box3 .content3 h2 {
+  margin: 0;
+  padding-top: 150px;
+  padding-left: 0px;
+  font-size: 2.5em;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.box3 .content3 p {
+  margin: 0;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-right: 10px;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 2.3em;
+  font-family: "Muli", sans-serif;
+}
+
+.box3 .content3 p a {
+  color: #1183ca;
+  text-decoration: none;
+}
 
 
 @media only screen and (max-width : 1000px) {
@@ -479,6 +525,35 @@ body {
     padding-right: 30px;
   }
 
+  .box3 {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .box3 .content3 h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 0px;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+  }
+
+  .box3 .content3 p {
+    margin: 0;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2.3em;
+    font-family: "Muli", sans-serif;
+  }
+
   .row {
     box-sizing: border-box;
     display: inline-block;
@@ -519,6 +594,8 @@ body {
     text-align: center;
   }
 }
+
+
 
 @media only screen and (max-width : 900px) {
   #showcase h1 {
@@ -594,6 +671,27 @@ body {
     line-height: 2.3em;
     font-family: "Muli", sans-serif;
   }
+
+  .box3 .content3 h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 0px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+  }
+
+  .box3 .content3 p {
+    margin: 0;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2.3em;
+    font-family: "Muli", sans-serif;
+  }
+
 
   #showcase ul {
     margin-top: 80px;
