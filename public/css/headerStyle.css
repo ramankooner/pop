@@ -18,7 +18,7 @@ body {
 }
 
 .navbar a {
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Muli",sans-serif;
   padding-left: 10px;
   transition: color 0.3s;
@@ -68,7 +68,7 @@ body {
   background: #333;
 }
 
-@media only screen and (max-width : 875px) {
+@media only screen and (max-width : 900px) {
   .titleName {
     display: none;
   }
