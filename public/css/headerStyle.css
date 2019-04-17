@@ -19,7 +19,7 @@ body {
 
 .navbar a {
   font-size: 25px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Muli",sans-serif;
   padding-left: 10px;
   transition: color 0.3s;
   color: #000;
@@ -29,10 +29,10 @@ body {
 
 
 .logo a{
-  background: url(../images/websiteLogo48.png) no-repeat 50% 50%;
+  background: url(../images/logo/1500x1500-black.png) no-repeat 50% 50%;
   background-size: contain;
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   float: left;
   margin-left: 30px;
 }
