@@ -441,6 +441,12 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
+
+  #showcase .textBox h1 {
+    font-size: 1.6em;
+    color: #333;
+  }
+  
   .listContainer ul {
     padding-left: 30%;
     float: inherit;

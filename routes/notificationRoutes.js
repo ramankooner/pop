@@ -72,6 +72,7 @@ module.exports = (app) => {
         <li>Car Make: ${req.body.carMake}</li>
         <li>Car Model: ${req.body.carModel}</li>
         <li>Car Year: ${req.body.carYear}</li>
+        <li>Car Style: ${req.body.carStyle}</li>
       </ul>`;
 
       let transporter = nodemailer.createTransport({

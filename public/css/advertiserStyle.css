@@ -33,7 +33,7 @@ body {
 }
 
 #showcase .textBox h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   color: #333;
 }
 
@@ -606,6 +606,12 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
+
+  #showcase .textBox h1 {
+    font-size: 1.6em;
+    color: #333;
+  }
+
   .box5 .content5 h2 {
     margin: 0;
     padding-top: 0px;
